@@ -4,8 +4,8 @@ def turn
   index = input_to_index(input)
 end
 
-def input_to_index(input)
-  (input.to_i) - 1
+def input_to_index(position)
+  position.to_i - 1
 end
 
 def display_board(board)
@@ -29,4 +29,5 @@ def position_taken?(board, index)
 end
 
 def move(board, index, player = "X")
+  board[index] = player
 end
